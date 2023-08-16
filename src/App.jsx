@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import Todo from "./components/Todo";
+import TodoForm from './components/TodoForm';
 
 
 
@@ -35,6 +36,7 @@ function App() {
           <Todo todo={todo} />
         ))}
       </div>
+      <TodoForm /> 
     </div>
   );
 }
