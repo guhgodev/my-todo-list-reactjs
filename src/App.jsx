@@ -25,10 +25,16 @@ function App() {
 
 
   return (
-    <div>
+    <div className="App">
       <h1> LISTA DE TAREFAS</h1>
-      <div className="todo-lis">
-
+      <div className="todo-list">
+        {todos.map((todo) => (
+          <div className="todo">
+            <div className="content">
+              <p>{todo.text}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
